@@ -54,8 +54,8 @@ export default function Header({ mode = 'light', toggleMode = () => {} }) {
             </IconButton>
 
             <Box sx={{ display: 'flex', ml: 1, gap: 0.5 }}>
-              <motion.button whileTap={{ scale: 0.96 }} onClick={() => setLang('en')} style={{ background: lang === 'en' ? 'linear-gradient(90deg,#7c4dff,#1e88e5)' : 'transparent', color: lang === 'en' ? '#fff' : 'inherit', border: 'none', padding: '6px 10px', borderRadius: 6, cursor: 'pointer' }}>EN</motion.button>
-              <motion.button whileTap={{ scale: 0.96 }} onClick={() => setLang('fr')} style={{ background: lang === 'fr' ? 'linear-gradient(90deg,#ff6f61,#ffb300)' : 'transparent', color: lang === 'fr' ? '#fff' : 'inherit', border: 'none', padding: '6px 10px', borderRadius: 6, cursor: 'pointer' }}>FR</motion.button>
+              <motion.button whileTap={{ scale: 0.96 }} onClick={() => setLang('en')} style={{ background: lang === 'en' ? 'linear-gradient(90deg,#7c4dff,#1e88e5)' : 'transparent', color: lang === 'en' ? '#fff' : 'inherit', border: 'none', padding: '6px 10px', borderRadius: 6, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: 6 }}><span aria-hidden="true">🇬🇧</span><span>EN</span></motion.button>
+              <motion.button whileTap={{ scale: 0.96 }} onClick={() => setLang('fr')} style={{ background: lang === 'fr' ? 'linear-gradient(90deg,#ff6f61,#ffb300)' : 'transparent', color: lang === 'fr' ? '#fff' : 'inherit', border: 'none', padding: '6px 10px', borderRadius: 6, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: 6 }}><span aria-hidden="true">🇫🇷</span><span>FR</span></motion.button>
             </Box>
           </Box>
 
@@ -102,8 +102,8 @@ export default function Header({ mode = 'light', toggleMode = () => {} }) {
             </motion.div>
 
             <Box sx={{ display: 'flex', gap: 1, mt: 2, justifyContent: 'center' }}>
-              <motion.button whileTap={{ scale: 0.96 }} onClick={() => setLang('en')} style={{ background: lang === 'en' ? 'linear-gradient(90deg,#7c4dff,#1e88e5)' : 'transparent', color: lang === 'en' ? '#fff' : 'inherit', border: 'none', padding: '8px 12px', borderRadius: 8, cursor: 'pointer' }}>EN</motion.button>
-              <motion.button whileTap={{ scale: 0.96 }} onClick={() => setLang('fr')} style={{ background: lang === 'fr' ? 'linear-gradient(90deg,#ff6f61,#ffb300)' : 'transparent', color: lang === 'fr' ? '#fff' : 'inherit', border: 'none', padding: '8px 12px', borderRadius: 8, cursor: 'pointer' }}>FR</motion.button>
+              <motion.button whileTap={{ scale: 0.96 }} onClick={() => setLang('en')} style={{ background: lang === 'en' ? 'linear-gradient(90deg,#7c4dff,#1e88e5)' : 'transparent', color: lang === 'en' ? '#fff' : 'inherit', border: 'none', padding: '8px 12px', borderRadius: 8, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: 6 }}><span aria-hidden="true">🇬🇧</span><span>EN</span></motion.button>
+              <motion.button whileTap={{ scale: 0.96 }} onClick={() => setLang('fr')} style={{ background: lang === 'fr' ? 'linear-gradient(90deg,#ff6f61,#ffb300)' : 'transparent', color: lang === 'fr' ? '#fff' : 'inherit', border: 'none', padding: '8px 12px', borderRadius: 8, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: 6 }}><span aria-hidden="true">🇫🇷</span><span>FR</span></motion.button>
             </Box>
           </List>
         </Box>
