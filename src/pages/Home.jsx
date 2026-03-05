@@ -10,6 +10,7 @@ import TypedText from '../components/TypedText'
 import { useLang } from '../i18n.jsx'
 import { motion } from 'framer-motion'
 import { useTheme } from '@mui/material/styles'
+import { Link as RouterLink } from 'react-router-dom'
 import profilePic from '../assets/moryphoto1.jpeg'
 import heroPic from '../assets/moryphoto2.jpeg'
 
@@ -41,8 +42,8 @@ export default function Home() {
               </Box>
 
               <Box sx={{ display: 'flex', gap: 2 }}>
-                <Button variant="contained" href="/projects">{t('home.ctaProjects')}</Button>
-                <Button variant="outlined" href="/contact">{t('home.ctaContact')}</Button>
+                <Button variant="contained" component={RouterLink} to="/projects">{t('home.ctaProjects')}</Button>
+                <Button variant="outlined" component={RouterLink} to="/contact">{t('home.ctaContact')}</Button>
               </Box>
               <Box sx={{ mt: 3 }}>
                 <Typography variant="h6" sx={{ mt: 2 }} className="section-title">{t('home.missionTitle')}</Typography>
