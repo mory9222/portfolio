@@ -26,7 +26,7 @@ export default function ProjectCard({ project }) {
         <Card sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
           <CardActionArea onClick={openDemo} sx={{ textAlign: 'left' }}>
             <Box sx={{ position: 'relative' }}>
-              <CardMedia component="img" image={project.image} alt={project.title} sx={{ width: '100%', height: { xs: 180, sm: 200, md: 160 }, objectFit: 'cover' }} />
+              <CardMedia component="img" src={project.image} alt={project.title} sx={{ width: '100%', height: { xs: 180, sm: 200, md: 160 }, objectFit: 'cover' }} />
               <Box sx={{ position: 'absolute', left: 12, top: 12, bgcolor: 'rgba(0,0,0,0.45)', color: '#fff', px: 1, py: 0.5, borderRadius: 1, fontWeight: 700 }}>{project.featured ? t('project.featured') : ''}</Box>
             </Box>
             <CardContent>
